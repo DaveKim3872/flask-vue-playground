@@ -53,6 +53,7 @@ class User(PaginatedAPIMixin, db.Model):
         data = {
             'id': self.id,
             'username': self.username,
+            'email': self.email,
             '_links': {
                 'self': url_for('api.get_user', id=self.id)
             }

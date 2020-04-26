@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-       <button type="button" class="btn btn-primary"> {{msg}} </button>
+       <button type="button" @click="getMessage()" class="btn btn-primary"> {{msg}} </button>
     </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
     name:'Ping',
     data() {
         return {
-            msg: ''
+            msg: 'HEHE'
         }
     },
     methods: {
@@ -27,8 +27,8 @@ export default {
         }
     },
 
-    created () {
-    this.getMessage()
-    }
+    // created () {
+    // this.getMessage()
+    // }
 }
 </script>
